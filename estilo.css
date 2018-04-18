@@ -1,0 +1,88 @@
+* {
+	
+margin: 0 auto;
+	font-family: Arial;	
+
+}
+#tudo {
+	
+padding: 20px;
+
+}
+
+
+#titulo {
+	
+font-family: Arial;
+	font-weight: bold;
+	font-size: 16px;
+	color: #B22222;
+
+}
+
+
+#developer {
+
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 10px;
+	color: #1C1C1C;
+	padding-top: 6px;
+
+}
+
+
+.logo { 
+	
+display: none;
+	float: left;
+
+}
+
+
+input {
+
+	padding: 3px;
+	margin-top: 6px;
+	width: 250px;
+
+}
+
+
+select {
+
+	margin-top: 6px;
+	padding: 4px;
+
+}
+
+
+#info {
+
+	font-family: Arial;
+	font-size: 12px;
+	color: #B22222;
+
+}
+
+
+#obs {
+	
+font-family: Arial;
+	font-weight: bold;
+	font-size: 12px;
+	color: #B22222;
+
+}
+
+
+.dados {
+	
+font-family: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	color: #1C1C1C;
+
+}
+
+

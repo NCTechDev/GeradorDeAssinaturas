@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.maskedinput.js"></script>
+
+<html lang="pt-br">
+
+<head>
+
+<script type="text/javascript">
+$(document).ready(function(){
+		$("input.cel").mask("Cel.: (99) 9 9999-9999");
+		$("input.cel2").mask("Cel. 2: (99) 9 9999-9999");
+});
+</script>
+	
+<meta charset="UTF-8">
+	
+<!--<meta name="author" content="Emilio Scodeler">	-->
+	
+<meta name="description" content="gerador de assinatura de email do grupo via mondo">
+
+	
+<link rel="stylesheet" type="text/css" href="estilo.css">
+	
+<script src="montagem.js" type="text/javascript"></script>
+
+	
+<title>Gerador de Assinatura de Email | Nc Tech</title>
+
+</head>
+
+<body>
+	
+<div id="tudo">	
+		
+<header id="cabecalho">
+			
+<p id="titulo">NC Tech | Gerador de Assinatura de Email</p>
+				
+<br>		
+	  	
+</header>
+
+		
+<section id="conteudo">
+			
+<form>
+				
+<label class="dados">Nome: </label>
+<input type="text" id="nome" autofocus onchange="gerar()"><br>
+				
+<label class="dados">Função: </label>
+<input type="text" id="funcao" onchange="gerar()"><br>
+				
+<label class="dados">Loja: </label>
+				
+<select id="loja" onchange="gerar()">
+
+<option value="" selected></option>
+					
+<option value="nctech">NC Tech</option>
+			
+</select>
+				
+<br>
+				
+<label class="dados">Celular: </label>
+<input type="text" class="cel" id="cel" onchange="gerar()"><br>
+
+<label class="dados">Celular 2: </label>
+<input type="text" class="cel2" id="cel2" onchange="gerar()"><br>
+				
+<label class="dados">Email: </label>
+<input type="text" id="email" onchange="gerar()"><br><br>
+			
+</form>
+			
+<button onclick="gerar()">Gerar Assinatura</button><br><br>
+
+			
+<canvas id="canvas" width="530" height="230" style="border:1px solid #fff;"></canvas>
+<br>
+<img src="logo.png" id="logo-nctech" class="logo"/>
+			
+<div id="assinatura"></div>
+
+			
+<label id="obs">obs: </label> <label id="info">clique com o botão direito em cima da assinatura
+				e escolha a opção salvar imagem.</label><br><br>
+
+		</section>	
+
+		<footer id="rodape"></footer>
+	</div>
+</body>
+</html>
+		
